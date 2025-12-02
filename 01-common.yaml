@@ -1,15 +1,3 @@
-# Secret for api-gateway configuration
-apiVersion: v1
-kind: Secret
-metadata:
-  name: app-secrets
-  namespace: api-gateway
-  annotations:
-    argocd.argoproj.io/sync-wave: "1"
-type: Opaque
-data:
-  JWT_SECRET: aWFtLWlzbWFlZWw=  # base64 for "iam-ismaeel"
----
 # configmap for auth-srvice configurations
 apiVersion: v1
 kind: ConfigMap
